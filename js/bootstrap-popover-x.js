@@ -145,7 +145,7 @@
                 self.$body = $container;
             }
             if (!self.$body || !self.$body.length) {
-                self.$body = $(document.body);
+                self.$body = $('.wrap');
             }
             self.$target = self.options.$target;
             self.$marker = $(document.createElement('div')).addClass('popover-x-marker').insertAfter($dialog).hide();
